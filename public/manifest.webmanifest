@@ -1,0 +1,26 @@
+{
+  "name": "DineFlow Office",
+  "short_name": "DF Office",
+  "description": "Kitchen, floor, and manager POS for DineFlow",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f3eee7",
+  "theme_color": "#B35200",
+  "categories": ["business", "food"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

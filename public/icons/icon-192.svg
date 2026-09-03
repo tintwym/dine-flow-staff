@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="DineFlow">
+  <rect width="192" height="192" rx="36" fill="#B35200"/>
+  <path fill="#FFF8F0" d="M48 128c0-28 20-48 48-48s48 20 48 48v8H48v-8z"/>
+  <circle cx="96" cy="72" r="22" fill="#FDCE90"/>
+  <path stroke="#FFF8F0" stroke-width="8" stroke-linecap="round" d="M64 148h64"/>
+</svg>
