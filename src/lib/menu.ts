@@ -27,13 +27,20 @@ export type CartLine = {
 
 export const CATEGORIES = [
   "All",
-  "Myanmar",
-  "Coffee & Drinks",
-  "Starters",
-  "Mains",
+  "Soups",
+  "Noodles",
+  "Rice",
+  "Curries",
+  "Salads & Thoke",
+  "Snacks",
+  "Sides",
   "Desserts",
-  "Chef Specials",
+  "Drinks",
+  "Specials",
 ] as const;
+
+/** Categories staff can assign in menu admin (no "All"). */
+export const MENU_CATEGORY_OPTIONS = CATEGORIES.filter((c) => c !== "All");
 
 /** Working HTTPS photos (Unsplash). Replace with Cloudinary public_ids after upload. */
 const img = (id: string) =>

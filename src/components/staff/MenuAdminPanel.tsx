@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { money } from "@/lib/menu";
+import { money, MENU_CATEGORY_OPTIONS } from "@/lib/menu";
 import { supabase } from "@/lib/supabase";
 import {
   deleteMenuItem,
@@ -16,7 +16,7 @@ const empty: Partial<MenuAdminRow> & {
   price: number;
 } = {
   title: "",
-  category: "Mains",
+  category: "Curries",
   price: 0,
   description: "",
   image_url: "",
@@ -124,10 +124,16 @@ export default function MenuAdminPanel() {
           </label>
           <label>
             Category
-            <input
+            <select
               value={form.category}
               onChange={(e) => setForm({ ...form, category: e.target.value })}
-            />
+            >
+              {MENU_CATEGORY_OPTIONS.map((c) => (
+                <option key={c} value={c}>
+                  {c}
+                </option>
+              ))}
+            </select>
           </label>
         </div>
         <label>
