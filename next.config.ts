@@ -17,6 +17,16 @@ const nextConfig: NextConfig = {
         hostname: "images.unsplash.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "dine-flow-restaurant.vercel.app",
+        pathname: "/menu/**",
+      },
+      {
+        protocol: "https",
+        hostname: "upload.wikimedia.org",
+        pathname: "/**",
+      },
     ],
   },
 };
